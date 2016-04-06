@@ -1,5 +1,7 @@
 # ocaml-cordova-plugin-videoplayer
 
+* gen_js_api (master branch): [![Build Status](https://travis-ci.org/dannywillems/ocaml-cordova-plugin-videoplayer.svg?branch=master)](https://travis-ci.org/dannywillems/ocaml-cordova-plugin-videoplayer)
+
 Binding to
 [cordova-plugin-videoplayer](https://github.com/moust/cordova-plugin-videoplayer)
 
@@ -47,7 +49,7 @@ event is handled, eg
 
 ```OCaml
 let on_device_ready =
-  let vp = Videoplayer.t () in
+  let vp = Video_player.t () in
   (* Some code *)
 
 let _ =
