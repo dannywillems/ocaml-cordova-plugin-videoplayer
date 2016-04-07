@@ -30,26 +30,45 @@ The js_of_ocaml version is available in the branch
 [*js_of_ocaml*](https://github.com/dannywillems/ocaml-cordova-plugin-videoplayer/tree/js_of_ocaml)
 but we **recommend** to use the gen_js_api version which is the master branch.
 
+## How to install and compile your project by using this plugin ?
+
+Don't forget to switch to a compiler **>= 4.03.0**.
+```Shell
+opam switch 4.03.0+beta1
+```
+
+You can use opam by pinning the repository with
+```Shell
+opam pin add cordova-plugin-video https://github.com/dannywillems/ocaml-cordova-plugin-video.git
+```
+
+and to compile your project, use
+```Shell
+ocamlfind ocamlc -c -o [output_file] -package gen_js_api -package cordova-plugin-video [...] -linkpkg [other arguments]
+```
+
+Don't forget to install the cordova plugin videoplayer with
+```Shell
+cordova plugin add com.moust.cordova.videoplayer
+```
+
 ## How to use ?
 
-TODO
+See the official documentation:
+[cordova-plugin-videoplayer](https://github.com/moust/cordova-plugin-videoplayer)
 
 ## ! BE CAREFUL !
 
 The plugin creates a new object called *VideoPlayer*, but the object is
 available when the *deviceready* event is handled.
 
-We don't provide a *video_player* variable in this plugin (as said in the official
-documentation on js_of_ocaml). If we did, *video_player* will be set to **undefined**
-because the *video_player* object doesn't exist when we create the variable.
-
-Instead, we provide a function *video_player* of type *unit -> video_player* which creates the
+We provide a function *Cordova_video_player.t* of type *unit -> Cordova_video_player.video_player* which creates the
 binding to the *VideoPlayer* object. You must call it when the deviceready
 event is handled, eg
 
 ```OCaml
 let on_device_ready =
-  let vp = Video_player.t () in
+  let vp = Cordova_video_player.t () in
   (* Some code *)
 
 let _ =
