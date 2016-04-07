@@ -1,12 +1,12 @@
 opam-version: "1.2"
-name:         "ocaml-cordova-plugin-video"
+name:         "ocaml-cordova-plugin-videoplayer"
 maintainer:   "Danny Willems <contact@danny-willems.be>"
 author:       "Danny Willems <contact@danny-willems.be>"
 
-homepage:     "https://github.com/dannywillems/ocaml-cordova-plugin-video"
-bug-reports:  "https://github.com/dannywillems/ocaml-cordova-plugin-video/issues"
+homepage:     "https://github.com/dannywillems/ocaml-cordova-plugin-videoplayer"
+bug-reports:  "https://github.com/dannywillems/ocaml-cordova-plugin-videoplayer/issues"
 
-dev-repo:     "https://github.com/dannywillems/ocaml-cordova-plugin-video"
+dev-repo:     "https://github.com/dannywillems/ocaml-cordova-plugin-videoplayer"
 
 license:      "LGPL-3.0 with OCaml linking exception"
 

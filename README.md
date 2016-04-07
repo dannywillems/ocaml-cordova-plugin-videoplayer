@@ -5,9 +5,6 @@
 Binding to
 [cordova-plugin-videoplayer](https://github.com/moust/cordova-plugin-videoplayer)
 
-[Example
-application](https://github.com/dannywillems/ocaml-cordova-plugin-camera-example).
-
 ## What does cordova-plugin-videoplayer do ?
 
 ```
@@ -39,12 +36,12 @@ opam switch 4.03.0+beta1
 
 You can use opam by pinning the repository with
 ```Shell
-opam pin add cordova-plugin-video https://github.com/dannywillems/ocaml-cordova-plugin-video.git
+opam pin add cordova-plugin-videoplayer https://github.com/dannywillems/ocaml-cordova-plugin-videoplayer.git
 ```
 
 and to compile your project, use
 ```Shell
-ocamlfind ocamlc -c -o [output_file] -package gen_js_api -package cordova-plugin-video [...] -linkpkg [other arguments]
+ocamlfind ocamlc -c -o [output_file] -package gen_js_api -package cordova-plugin-videoplayer [...] -linkpkg [other arguments]
 ```
 
 Don't forget to install the cordova plugin videoplayer with

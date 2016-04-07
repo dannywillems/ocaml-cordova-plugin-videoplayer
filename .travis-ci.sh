@@ -14,8 +14,8 @@
 
 set -o nounset                              # Treat unset variables as an error
 
-URL=https://github.com/dannywillems/ocaml-cordova-plugin-video.git
-PLUGIN_PIN=cordova-plugin-video
+URL=https://github.com/dannywillems/ocaml-cordova-plugin-videoplayer.git
+PLUGIN_PIN=cordova-plugin-videoplayer
 
 export OPAMYES=1
 
