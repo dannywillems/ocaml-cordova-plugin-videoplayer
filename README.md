@@ -54,22 +54,3 @@ cordova plugin add com.moust.cordova.videoplayer
 
 See the official documentation:
 [cordova-plugin-videoplayer](https://github.com/moust/cordova-plugin-videoplayer)
-
-## ! BE CAREFUL !
-
-The plugin creates a new object called *VideoPlayer*, but the object is
-available when the *deviceready* event is handled.
-
-We provide a function *Cordova_video_player.t* of type *unit -> Cordova_video_player.video_player* which creates the
-binding to the *VideoPlayer* object. You must call it when the deviceready
-event is handled, eg
-
-```OCaml
-let on_device_ready =
-  let vp = Cordova_video_player.t () in
-  (* Some code *)
-
-let _ =
-  Dom.addEventListener Dom_html.document (Dom.Event.make "deviceready")
-  (Dom_html.handler on_device_ready) Js._false
-```
