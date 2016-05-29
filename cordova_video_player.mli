@@ -11,16 +11,6 @@ type scaling_mode_type          =
   | Scale_to_fit [@js 1]
   | Scale_to_fit_with_cropping [@js 2]
   [@@js.enum]
-
-[@@@js.stop]
-val scale_to_fit                : scaling_mode_type
-val scale_to_fit_with_cropping  : scaling_mode_type
-[@@@js.start]
-
-[@@@js.implem
-let scale_to_fit                = Scale_to_fit
-let scale_to_fit_with_cropping  = Scale_to_fit_with_cropping
-]
 (* -------------------------------------------------------------------------- *)
 
 (* -------------------------------------------------------------------------- *)
