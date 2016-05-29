@@ -4,16 +4,15 @@
 [![Build Status](https://travis-ci.org/dannywillems/ocaml-cordova-plugin-videoplayer.svg?branch=master)](https://travis-ci.org/dannywillems/ocaml-cordova-plugin-videoplayer)
 
 Binding to
-[cordova-plugin-videoplayer](https://github.com/moust/cordova-plugin-videoplayer)
+[com.moust.cordova.videoplayer](https://github.com/moust/cordova-plugin-videoplayer)
 
 ## What does cordova-plugin-videoplayer do ?
 
 ```
-This plugin use the Cordova CLI's plugin command. To install it to your
-application, simply execute the following (and replace variables).
+A Codova plugin that simply allows you to immediately play a video in fullscreen mode.
 ```
 
-Source: [cordova-plugin-videoplayer](https://github.com/moust/cordova-plugin-videoplayer)
+Source: [om.moust.cordova.videoplayer](https://github.com/moust/cordova-plugin-videoplayer)
 
 ## Repository branches and tags
 
@@ -35,17 +34,24 @@ Don't forget to switch to a compiler **>= 4.03.0**.
 opam switch 4.03.0
 ```
 
+* If you added
+[ocaml-cordova-plugin-list](https://github.com/dannywillems/ocaml-cordova-plugin-list)
+as opam package provider, you can use
+```
+opam install cordova-plugin-videoplayer
+```
+
 You can use opam by pinning the repository with
 ```Shell
 opam pin add cordova-plugin-videoplayer https://github.com/dannywillems/ocaml-cordova-plugin-videoplayer.git
 ```
 
-and to compile your project, use
+To compile your project, use
 ```Shell
 ocamlfind ocamlc -c -o [output_file] -package gen_js_api -package cordova-plugin-videoplayer [...] -linkpkg [other arguments]
 ```
 
-Don't forget to install the cordova plugin videoplayer with
+Don't forget to install com.moust.cordova.videoplayer with
 ```Shell
 cordova plugin add com.moust.cordova.videoplayer
 ```
@@ -53,4 +59,4 @@ cordova plugin add com.moust.cordova.videoplayer
 ## How to use ?
 
 See the official documentation:
-[cordova-plugin-videoplayer](https://github.com/moust/cordova-plugin-videoplayer)
+[com.moust.cordova.videoplayer](https://github.com/moust/cordova-plugin-videoplayer)
