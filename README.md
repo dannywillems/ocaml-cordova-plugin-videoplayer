@@ -41,7 +41,7 @@ as opam package provider, you can use
 opam install cordova-plugin-videoplayer
 ```
 
-You can use opam by pinning the repository with
+* Else, you can use opam by pinning the repository with
 ```Shell
 opam pin add cordova-plugin-videoplayer https://github.com/dannywillems/ocaml-cordova-plugin-videoplayer.git
 ```
